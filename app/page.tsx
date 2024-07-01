@@ -1,42 +1,11 @@
-"use client";
-import ProfileCard from "./components/ProfileCard";
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import React from 'react'
 
-const socialIcons = [
-  {
-    id: 1,
-    href: "https://www.facebook.com/",
-    icon: <FaFacebookF />,
-  },
-  {
-    id: 2,
-    href: "https://www.linkedin.com/",
-    icon: <FaLinkedinIn />,
-  },
-  {
-    id: 3,
-    href: "https://x.com/",
-    icon: <FaXTwitter />,
-  },
-  {
-    id: 4,
-    href: "https://www.instagram.com/",
-    icon: <FaInstagram />,
-  },
-];
-
-export default function Home() {
+const page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <ProfileCard imageSrc="https://c4.wallpaperflare.com/wallpaper/260/77/314/astronaut-4k-background-hd-image-wallpaper-preview.jpg"
-      username="Shubham Tiwari"
-      socialIcons={socialIcons}
-      description="Voluptate voluptate id nostrud est anim commodo enim commodo sint deserunt incididunt irure reprehenderit irure."
-      followHandler={() => console.log("Follow")}
-      messageHandler={() => console.log("Message")} />
-    </main>
-  );
+    <div>
+      Hello
+    </div>
+  )
 }
+
+export default page
